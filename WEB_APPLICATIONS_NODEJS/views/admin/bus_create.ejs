@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("../partials/head")  %> 
+</head>
+<body>
+    <%- include("../partials/nav2")  %> 
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-12 mt-3">
+                <form method="POST">
+                    <div class="row mb-3">
+                        <label for="bus_ID" class="col-sm-2 col-form-label">Bus ID:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="bus_ID" name="bus_ID">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="capacity" class="col-sm-2 col-form-label">Capacity:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="capacity" name="capacity">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="count_available_seat" class="col-sm-2 col-form-label">Count Available Seat:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="count_available_seat" name="count_available_seat">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="plate_number" class="col-sm-2 col-form-label">Plate Number:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="plate_number" name="plate_number">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="company_id" class="col-sm-2 col-form-label">Company ID:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="company_id" name="company_id">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-sm-8 offset-sm-2">
+                            <button  type="submit"  class="btn btn-primary">SAVE</button>
+                            <a class="btn btn-danger" href="./admin_companies_list">EXIT</a> 
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("../partials/head")  %> 
+</head>
+<body>
+    <%- include("../partials/nav2")  %> 
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-12 mt-3">
+                <form method="POST">
+                    <input type="hidden" name="routeid" value="<%= Routes.dataValues.route_ID %> ">
+                    <div class="row mb-3">
+                        <label for="route_ID" class="col-sm-2 col-form-label">Route ID:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="route_ID" name="route_ID" value="<%= Routes.dataValues.route_ID %> ">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="date" class="col-sm-2 col-form-label">Date:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="date" name="date" value="<%= Routes.dataValues.date %> ">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="travel_time" class="col-sm-2 col-form-label">Travel Time:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="travel_time" name="travel_time" value="<%= Routes.dataValues.travel_time %> ">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="from" class="col-sm-2 col-form-label">From:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="fromm" name="fromm" value="<%= Routes.dataValues.fromm %> ">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="to" class="col-sm-2 col-form-label">To:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="too" name="too" value="<%= Routes.dataValues.too %> ">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="bus_id" class="col-sm-2 col-form-label">Bus ID:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="bus_id" name="bus_id" value="<%= Routes.dataValues.bus_id %> ">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-sm-8 offset-sm-2">
+                          <button type="submit" class="btn btn-primary">Save</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

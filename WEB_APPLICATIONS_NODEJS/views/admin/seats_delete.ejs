@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("../partials/head")  %> 
+</head>
+<body >
+  <%- include("../partials/nav2")  %> 
+  <div class="container mt-3">
+    <div class="row">
+     <div class="col-md-12 mt-3 ">
+        <div class="alert alert-secondary">
+            <p class="mb-3">
+                <b><%= Seat.seat_ID %></b> <br> Do you want to delete the seat? 
+            </p>
+            <form method="POST">
+                <input type="hidden" name="seatid" value="<%= Seat.seat_ID %>">
+                <button class="btn btn-danger" type="submit">YES</button>
+                <a href="/admin/admin_seats_list" class="btn btn-primary">NO</a>
+            </form>
+        </div>
+     </div>
+</body>
+</html>

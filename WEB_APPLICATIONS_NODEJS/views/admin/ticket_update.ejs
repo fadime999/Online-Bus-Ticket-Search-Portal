@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("../partials/head")  %> 
+</head>
+<body>
+    <%- include("../partials/nav2")  %> 
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-12 mt-3">
+                <form method="POST">
+                    <input type="hidden" name="ticketid" value="<%= Ticket.dataValues.ticket_ID %> ">
+                    <div class="row mb-3">
+                        <label for="ticket_ID" class="col-sm-2 col-form-label">Ticket ID:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="ticket_ID" name="ticket_ID" value="<%= Ticket.dataValues.ticket_ID %> ">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="ticket_price" class="col-sm-2 col-form-label">Ticket Price:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="ticket_price" name="ticket_price" value="<%= Ticket.dataValues.ticket_price %> ">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="seat_number" class="col-sm-2 col-form-label">Seat Number:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="seat_number" name="seat_number" value="<%= Ticket.dataValues.seat_number %> ">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="customer_id" class="col-sm-2 col-form-label">Customer ID:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="customer_id" name="customer_id" value="<%= Ticket.dataValues.customer_id %> ">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="bus_id" class="col-sm-2 col-form-label">Bus ID:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="bus_id" name="bus_id" value="<%= Ticket.dataValues.bus_id %> ">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="route_id" class="col-sm-2 col-form-label">Route ID:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="route_id" name="route_id" value="<%= Ticket.dataValues.route_id %> ">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-sm-8 offset-sm-2">
+                          <button type="submit" class="btn btn-primary">Save</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

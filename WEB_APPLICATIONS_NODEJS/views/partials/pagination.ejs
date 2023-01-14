@@ -1,0 +1,17 @@
+<!-- pagination -->
+
+<nav>
+    <ul class="pagination justify-content-center position-absolute bottom-0 start-50 translate-middle-x">
+        <li class="page-item">
+            <a href="?page=0" class="page-link">First Page</a>
+        </li>
+        <% for( let i = 0; i < totalPages; i++ ) { %>
+         <li class="page-item">
+            <a href="?page=<%= i %>" class="page-link <%= (i==currentPage) ? "active":"" %>"><%= i+1 %></a>
+        </li> 
+        <% } %>
+        <li class="page-item">
+            <a href="?page=<%= totalPages-1 %>" class="page-link">Last Page</a>
+        </li>
+    </ul>
+</nav>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("../partials/head")  %> 
+</head>
+<body>
+    <%- include("../partials/nav2")  %> 
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-12 mt-3">
+                <form method="POST">
+                    <div class="row mb-3">
+                        <label for="route_ID" class="col-sm-2 col-form-label">Route ID:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="route_ID" name="route_ID">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="date" class="col-sm-2 col-form-label">Date:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="date" name="date">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="travel_time" class="col-sm-2 col-form-label">Travel Time:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="travel_time" name="travel_time">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="from" class="col-sm-2 col-form-label">From:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="fromm" name="fromm">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="to" class="col-sm-2 col-form-label">To:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="too" name="too">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="bus_id" class="col-sm-2 col-form-label">Bus ID:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="bus_id" name="bus_id">
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-sm-8 offset-sm-2 mt-3">
+                            <button  type="submit"  class="btn btn-primary">SAVE</button>
+                            <a class="btn btn-danger" href="./admin_companies_list">EXIT</a> 
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

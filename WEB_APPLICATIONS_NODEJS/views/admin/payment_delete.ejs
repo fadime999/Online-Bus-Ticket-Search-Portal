@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("../partials/head")  %> 
+</head>
+<body >
+  <%- include("../partials/nav2")  %> 
+  <div class="container mt-3">
+    <div class="row">
+     <div class="col-md-12 mt-3 ">
+        <div class="alert alert-secondary">
+            <p class="mb-3">
+                <b><%= Payment.payment_ID %></b> <br> Do you want to delete the payment? 
+            </p>
+            <form method="POST">
+                <input type="hidden" name="paymentid" value="<%= Payment.payment_ID %>">
+                <button class="btn btn-danger" type="submit">YES</button>
+                <a href="/admin/admin_payment_list" class="btn btn-primary">NO</a>
+            </form>
+        </div>
+     </div>
+</body>
+</html>

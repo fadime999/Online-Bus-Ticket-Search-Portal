@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("../partials/head")  %> 
+</head>
+<body>
+    <%- include("../partials/nav2")  %> 
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-12 mt-3">
+                <form method="POST">
+                    <div class="row mb-3">
+                        <label for="seat_ID" class="col-sm-2 col-form-label">Seat ID:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="seat_ID" name="seat_ID">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="windows_side" class="col-sm-2 col-form-label">Windows Side:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="windows_side" name="windows_side">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="available" class="col-sm-2 col-form-label">Available:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="available" name="available">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="number" class="col-sm-2 col-form-label">Number:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="number" name="number">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="ticket_id" class="col-sm-2 col-form-label">Ticket ID:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="ticket_id" name="ticket_id">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="bus_id" class="col-sm-2 col-form-label">Bus ID:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="bus_id" name="bus_id">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-sm-8 offset-sm-2">
+                            <button  type="submit"  class="btn btn-primary">SAVE</button>
+                            <a class="btn btn-danger" href="./admin_companies_list">EXIT</a> 
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

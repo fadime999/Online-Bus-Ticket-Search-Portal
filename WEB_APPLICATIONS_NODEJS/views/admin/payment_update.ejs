@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("../partials/head")  %> 
+</head>
+<body>
+    <%- include("../partials/nav2")  %> 
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-12 mt-3">
+                <form method="POST">
+                    <input type="hidden" name="paymentid" value="<%= Payment.dataValues.payment_ID %>">
+                    <div class="row mb-3">
+                        <label for="payment_ID" class="col-sm-2 col-form-label">Payment ID:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="payment_ID" name="payment_ID" value="<%= Payment.dataValues.payment_ID %> ">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="date" class="col-sm-2 col-form-label">Date:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="date" name="date" value="<%= Payment.dataValues.date %> ">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="booking_id" class="col-sm-2 col-form-label">Booking ID:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="booking_id" name="booking_id" value="<%= Payment.dataValues.booking_id %> ">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="amount_paid" class="col-sm-2 col-form-label">Amount Paid:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="amount_paid" name="amount_paid" value="<%= Payment.dataValues.amount_paid %> ">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="customer_id" class="col-sm-2 col-form-label">Customer ID:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="customer_id" name="customer_id" value="<%= Payment.dataValues.customer_id %> ">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-sm-8 offset-sm-2">
+                          <button type="submit" class="btn btn-primary">Save</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

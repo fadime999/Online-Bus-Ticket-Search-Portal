@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("../partials/head")  %> 
+</head>
+<body>
+    <%- include("../partials/nav2")  %> 
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-12 mt-3">
+                <form method="POST">
+                    <div class="row mb-3">
+                        <label for="company_ID" class="col-sm-2 col-form-label">Company ID:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="company_ID" name="company_ID">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="count_bus" class="col-sm-2 col-form-label">Count Bus:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="count_bus" name="count_bus">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="name" class="col-sm-2 col-form-label">Name:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="name" name="name">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="bus_code" class="col-sm-2 col-form-label">Bus Code:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="bus_code" name="bus_code">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-sm-8 offset-sm-2">
+                          <button  type="submit"  class="btn btn-primary">SAVE</button>
+                          <a class="btn btn-danger" href="./admin_companies_list">EXIT</a> 
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
