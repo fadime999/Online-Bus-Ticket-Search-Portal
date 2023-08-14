@@ -6,3 +6,20 @@ If you want to register to the system as admin, the user name should be admin. I
 It may provide less extensive access than the user admin. The user can search for suitable bus tickets without logging into the system. However, if desired, information is added to the database after registering to the system from the register page. When he logs into the system at any time, his information will be accessed from the database. In addition to these, after the user lists the suitable bus tickets in our system, a buy button has been added for the purchase process.</br>
 </br> 
 # Screenshots
+![Project Screenshot](https://github.com/fadime999/Online-Bus-Ticket-Search-Portal/blob/main/WEB_APPLICATIONS_NODEJS/Screenshots/s1.PNG)                     
+_The page that will appear in the browser without any login._
+</br>    
+![Project Screenshot2](https://github.com/fadime999/Online-Bus-Ticket-Search-Portal/blob/main/WEB_APPLICATIONS_NODEJS/Screenshots/s2.PNG)
+_The page that will appear in the browser after login._
+</br>  
+![Project Screenshot2](https://github.com/fadime999/Online-Bus-Ticket-Search-Portal/blob/main/WEB_APPLICATIONS_NODEJS/Screenshots/s3.PNG)
+_Listing the tickets suitable for the query._
+</br>  
+![Project Screenshot2](https://github.com/fadime999/Online-Bus-Ticket-Search-Portal/blob/main/WEB_APPLICATIONS_NODEJS/Screenshots/s4.PNG)
+_The page that the admin will see after logging in._
+</br>  
+![Project Screenshot2](https://github.com/fadime999/Online-Bus-Ticket-Search-Portal/blob/main/WEB_APPLICATIONS_NODEJS/Screenshots/s5.PNG)
+_Admin edit page._
+</br>  
+![Project Screenshot2](https://github.com/fadime999/Online-Bus-Ticket-Search-Portal/blob/main/WEB_APPLICATIONS_NODEJS/Screenshots/s6.PNG)
+_Displaying the log page to the admin._
